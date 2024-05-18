@@ -1,5 +1,10 @@
+// Import express and call the Router method
 const notes = require('express').Router();
+
+// Destructure the modules we need from the 'fsUtils' file
 const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
+
+// Destructure the 'uuidv4' module so we can add individual id's for each note. 
 const { v4: uuidv4 } = require('uuid');
 
 // GET Route for retrieving all notes
@@ -22,6 +27,12 @@ notes.post('/', (req, res) => {
   } else {
     res.error('Error in adding note');
   }
+});
+
+// DELETE Route for deleting an existing note
+/* "In order to delete a note, you'll need to read all notes from the db.json file, 
+ remove the note with the given id property, and then rewrite the notes to the db.json file."" */
+notes.delete('/api/notes:id', (req, res) => {
 });
 
 module.exports = notes;

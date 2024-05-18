@@ -1,12 +1,17 @@
 [
     {
-        "title": "FIRST NOTE",
-        "text": "here we gooooo",
-        "id": "416cd146-350f-4a78-b6d0-048d4707f95c"
+        "title": "First note",
+        "text": "Something here",
+        "id": "e1583e77-a437-42d3-a833-da423a849bcf"
     },
     {
-        "title": "how about anotherrrr",
-        "text": "another note hrereeee",
-        "id": "e1d60be3-20b7-4c7a-a274-078104609c73"
+        "title": "Another to-do item here",
+        "text": "Something to recall back on",
+        "id": "d6503e6f-45cf-42a3-9c18-1201846f1b6f"
+    },
+    {
+        "title": "An idea or to-do item",
+        "text": "Fill in the text for the item here.",
+        "id": "b1377fb7-0f8a-4c34-bbd8-2d9abe8db21d"
     }
 ]
