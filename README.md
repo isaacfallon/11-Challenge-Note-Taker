@@ -4,17 +4,19 @@
         
 ## Description
             
-This project is a note taking application built in the back end using [Express.js](https://expressjs.com/) and deployed at a live website via [Render](https://render.com/).
+This project is a note taking application built using the back-end Javascript development framework [Express.js](https://expressjs.com/) and deployed at a live website via [Render](https://render.com/).
 
-I built this application because...
+I built this application as a way to store to-do items or other important notes a user may want to keep saved for future reference. As all notes are saved server-side in a .json file, the user can easily recall back their information at a later date or add new items. 
 
-By completing this project, I learned...
+By completing this project, I expanded my knowledge of how to use the Express.js framework and specific HTTP methods to obtain, store and save data in my own created API. 
 
 ### Screenshot of application:
 
 The screenshot below shows the front-end of the application with several notes saved.
 
-![Screenshot showing the application's front end with several notes saved.]()
+![Screenshot showing the application's front end with several notes saved.](./assets/11-Challenge-Note-Taker_README-screenshot-notes-in-list.png)
+
+The screenshot also shows how the most recent note titled: "An idea or to-do item", has been clicked on the left panel and has its details expanded on the right. 
             
 ## Table of Contents
             
@@ -27,23 +29,25 @@ The screenshot below shows the front-end of the application with several notes s
             
 ## Installation
 
-There is no installation required if you want to access the deployed application via Render which is available here. 
+There is no installation required if you want to access the deployed application via Render which is available here:
+https://isaac-fallon-11-challenge-note-taker.onrender.com
+
 
 However, if you'd prefer to run the program locally, you can do so by following these steps:
 
-1. Firstly, you'll need to clone the repository to your local machine. [Refer to this guide from GitHub if you need help.](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository/)
+1. Clone the repository to your local machine. [Refer to this guide from GitHub if you need help.](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository/)
 
-2. Once cloned, you will need to navigate to the project's folder in your terminal and run the command: 'npm i' to install the necessary dependencies. 
+2. Once cloned, you will need to navigate to the project's folder in your terminal and run the command: 'npm install' to install the necessary dependencies. 
 
 3. While still in the project's folder in your terminal, enter the command: 'npm start' to run the application locally.
 
-4. In your browser of choice, navigate to the following URL: 'http://localhost:3001/'
+4. In your browser of choice, navigate to the following URL: 'http://localhost:3001/' which should show the index.html landing page. 
             
 ## Usage
 
-To use the deployed application, visit the deployment link at Render here: 
+To use the application, visit the deployed link hosted on Render:
 
-www.google.com
+https://isaac-fallon-11-challenge-note-taker.onrender.com
             
 ## License
             
@@ -71,6 +75,9 @@ SOFTWARE.
             
 ## Contributing
 
+The ['fsUtils'](./helpers/fsUtils.js) file located within the 'helpers' folder in this repository was copied from the week 11 mini-project file created by The University of Sydney's Coding Bootcamp program.
+
+All code in this file belongs to the programers responsible for setting up these bootcamp modules. 
             
 ## Tests
 
