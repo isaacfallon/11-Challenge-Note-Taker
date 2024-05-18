@@ -1,6 +1,12 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title": "FIRST NOTE",
+        "text": "here we gooooo",
+        "id": "416cd146-350f-4a78-b6d0-048d4707f95c"
+    },
+    {
+        "title": "how about anotherrrr",
+        "text": "another note hrereeee",
+        "id": "e1d60be3-20b7-4c7a-a274-078104609c73"
     }
 ]
