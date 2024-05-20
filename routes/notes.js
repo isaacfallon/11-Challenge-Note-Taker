@@ -1,8 +1,9 @@
 // Import express and call the Router method
 const notes = require('express').Router();
-
 // Destructure the modules we need from the 'fsUtils' file
-const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
+const { readFromFile, readAndAppend, writeToFile } = require('../helpers/fsUtils');
+
+// let something = require('../db/db.json')
 
 // Destructure the 'uuidv4' module so we can add individual id's for each note. 
 const { v4: uuidv4 } = require('uuid');
@@ -30,9 +31,29 @@ notes.post('/', (req, res) => {
 });
 
 // DELETE Route for deleting an existing note
-/* "In order to delete a note, you'll need to read all notes from the db.json file, 
- remove the note with the given id property, and then rewrite the notes to the db.json file."" */
-notes.delete('/api/notes:id', (req, res) => {
+// Note: I wasn't able to get this to work but I've detailed out the steps I think are close.
+notes.delete('/api/notes/:id', (req, res) => {
+
+  // Pull the specific note id from the 'params' part of the request to '/api/notes/:id'
+    let noteID = req.params.id
+
+    // Read all notes from the db.json file and save it to a variable
+    let existingNotes = readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
+
+    // Loop through each existing note
+    for (let i = 0; i < existingNotes.length; i++) {
+
+      // Check to see if the note id in the db.json file is the same as the one clicked on
+      if (noteID === existingNotes[i].id) {
+        // Use the splice method to remove the specific note with the associated id
+        existingNotes.splice(i, 1);
+        // Save the new list of notes as a 'stringified' file
+        let noteJSON = JSON.stringify(existingNotes, null, 2);
+        
+        // Then write that new file to the location of './db/db.json'
+        writeToFile('./db/db.json', noteJSON);
+      }
+    }
 });
 
 module.exports = notes;

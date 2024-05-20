@@ -1,3 +1,6 @@
+// Please note: Content within has been largely referenced from 
+// the week 11 mini-project file created by The University of Sydney's Coding Bootcamp program.
+
 const fs = require('fs');
 const util = require('util');
 

@@ -75,7 +75,7 @@ SOFTWARE.
             
 ## Contributing
 
-The ['fsUtils'](./helpers/fsUtils.js) file located within the 'helpers' folder in this repository was copied from the week 11 mini-project file created by The University of Sydney's Coding Bootcamp program.
+The ['fsUtils'](./helpers/fsUtils.js) file located within the 'helpers' folder in this repository was referenced from the week 11 mini-project file created by The University of Sydney's Coding Bootcamp program. While I've made very slight changes, the overall design and structure is mostly taken from the  Bootcamp program. 
 
 All code in this file belongs to the programers responsible for setting up these bootcamp modules. 
             
